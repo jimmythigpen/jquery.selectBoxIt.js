@@ -49,7 +49,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
-  grunt.registerTask('test', ['concat', 'jshint', 'jasmine']);
+  grunt.registerTask('test', ['concat', 'jshint']);
   // Travis CI task.
   grunt.registerTask('travis', 'test');
   grunt.registerTask('build', ['uglify']);
